@@ -8,7 +8,12 @@
 
 import UIKit
 
+/**COLORS**/
+var darkBlue = UIColor(red: 36.0/255.0, green: 32.0/255.0, blue: 56.0/255.0, alpha: 1.0)
+
 class ViewController: UIViewController {
+    
+    var commitment : Commitment?
 
     override func viewDidLoad() {
         super.viewDidLoad()

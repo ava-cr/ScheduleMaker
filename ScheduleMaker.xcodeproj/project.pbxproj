@@ -13,6 +13,10 @@
 		37029E6A202D6DFC00F876C2 /* ScheduleMaker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 37029E68202D6DFC00F876C2 /* ScheduleMaker.xcdatamodeld */; };
 		37029E6C202D6DFC00F876C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37029E6B202D6DFC00F876C2 /* Assets.xcassets */; };
 		37029E6F202D6DFC00F876C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37029E6D202D6DFC00F876C2 /* LaunchScreen.storyboard */; };
+		37029E78202D6F4C00F876C2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37029E77202D6F4C00F876C2 /* HomeView.swift */; };
+		37029E7B202D73C900F876C2 /* CustomSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37029E7A202D73C900F876C2 /* CustomSegue.swift */; };
+		37029E7E202D75E900F876C2 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37029E7D202D75E900F876C2 /* CoreDataHelper.swift */; };
+		37029E80202D7A2C00F876C2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37029E7F202D7A2C00F876C2 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		37029E6B202D6DFC00F876C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37029E6E202D6DFC00F876C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37029E70202D6DFC00F876C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37029E77202D6F4C00F876C2 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		37029E7A202D73C900F876C2 /* CustomSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegue.swift; sourceTree = "<group>"; };
+		37029E7D202D75E900F876C2 /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
+		37029E7F202D7A2C00F876C2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +64,10 @@
 		37029E60202D6DFC00F876C2 /* ScheduleMaker */ = {
 			isa = PBXGroup;
 			children = (
+				37029E7C202D75D400F876C2 /* Helpers */,
 				37029E61202D6DFC00F876C2 /* AppDelegate.swift */,
-				37029E63202D6DFC00F876C2 /* ViewController.swift */,
+				37029E79202D6FA200F876C2 /* Controllers */,
+				37029E76202D6F4000F876C2 /* Views */,
 				37029E65202D6DFC00F876C2 /* Main.storyboard */,
 				37029E6B202D6DFC00F876C2 /* Assets.xcassets */,
 				37029E6D202D6DFC00F876C2 /* LaunchScreen.storyboard */,
@@ -65,6 +75,32 @@
 				37029E68202D6DFC00F876C2 /* ScheduleMaker.xcdatamodeld */,
 			);
 			path = ScheduleMaker;
+			sourceTree = "<group>";
+		};
+		37029E76202D6F4000F876C2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				37029E77202D6F4C00F876C2 /* HomeView.swift */,
+				37029E7A202D73C900F876C2 /* CustomSegue.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		37029E79202D6FA200F876C2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				37029E63202D6DFC00F876C2 /* ViewController.swift */,
+				37029E7F202D7A2C00F876C2 /* HomeViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		37029E7C202D75D400F876C2 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				37029E7D202D75E900F876C2 /* CoreDataHelper.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +175,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37029E7E202D75E900F876C2 /* CoreDataHelper.swift in Sources */,
 				37029E64202D6DFC00F876C2 /* ViewController.swift in Sources */,
+				37029E78202D6F4C00F876C2 /* HomeView.swift in Sources */,
 				37029E6A202D6DFC00F876C2 /* ScheduleMaker.xcdatamodeld in Sources */,
+				37029E7B202D73C900F876C2 /* CustomSegue.swift in Sources */,
+				37029E80202D7A2C00F876C2 /* HomeViewController.swift in Sources */,
 				37029E62202D6DFC00F876C2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,6 +319,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DTY9TBD24Y;
 				INFOPLIST_FILE = ScheduleMaker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ava-cr.ScheduleMaker";
@@ -293,6 +334,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DTY9TBD24Y;
 				INFOPLIST_FILE = ScheduleMaker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ava-cr.ScheduleMaker";
